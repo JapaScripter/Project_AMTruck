@@ -1,0 +1,73 @@
+/* Formulário */
+
+.formulario p{
+    margin: 0!important;
+    max-width: 100%!important;
+}
+
+.formulario h2{
+    color: #000 !important;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.formulario-nome-email, .formulario-telefone-select{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0 20px; 
+}
+
+.formulario-area{
+    padding: 0 20px;
+}
+
+
+
+input[name=your-name], input[name=your-email], input[name=your-tel], select[name=menu-750], textarea[name=your-message]{
+    width: 99%;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    border: none;
+}
+
+.wpcf7-form-control.wpcf7-submit{
+    border: 3px solid #ffaf00;
+    padding: 10px 30px;
+    background: #ffaf00;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    width: calc(90% + 5px) !important;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+textarea[name="your-message"]{
+    height: 150px;
+    padding-top: 10px;
+}
+
+.obrigado{
+    padding: 50px 0;
+}
+
+.obrigado h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.obrigado p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}

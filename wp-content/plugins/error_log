@@ -1,0 +1,8 @@
+[07-Sep-2023 04:31:03 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/amtruc69/public_html/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/amtruc69/public_html/wp-content/plugins/hello.php on line 69
+[05-May-2024 01:43:05 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/amtruc69/public_html/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/amtruc69/public_html/wp-content/plugins/hello.php on line 69

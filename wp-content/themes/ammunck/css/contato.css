@@ -1,0 +1,51 @@
+.interna_contato {
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(194, 154, 23, 0.685);
+}
+
+.orcamento_dados {
+  color: #fff;
+}
+
+.contato_dados h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fec63e;
+  font-weight: bold;
+}
+
+.contato_dados span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.contato_dados span:nth-of-type(even) {
+  margin-bottom: 30px;
+}
+
+.contato_dados ul {
+  margin-top: 10px;
+}
+
+.contato_dados ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contato_dados ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 10px;
+}
+
+.contato_dados ul li a:hover {
+  border-color: #000;
+}
+
+.contato_mapa {
+  margin-bottom: 60px;
+}

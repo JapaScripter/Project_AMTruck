@@ -1,0 +1,9 @@
+.interna_sobre {
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(194, 154, 23, 0.685);
+}
+
+.foto-equipe {
+  padding-top: 20px;
+}

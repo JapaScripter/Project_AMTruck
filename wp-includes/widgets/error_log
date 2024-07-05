@@ -1,0 +1,12 @@
+[28-Nov-2022 16:54:30 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home2/amtruc69/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/amtruc69/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
+[30-Nov-2022 07:21:12 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home2/amtruc69/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/amtruc69/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
+[25-Jan-2023 10:08:15 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home2/amtruc69/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/amtruc69/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
