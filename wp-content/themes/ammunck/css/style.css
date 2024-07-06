@@ -917,7 +917,7 @@ html a{
     line-height: 20px;
     text-align:justify;
     text-align-last: center;
-    margin: 0;
+    margin: 0 0 5vw 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra no texto para melhorar a legibilidade */
 }
 
@@ -1077,6 +1077,14 @@ html a{
   .slidesimages{
     width:50vw;
     height:48vw;
+  }
+  .slide img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .slideres::before, .slideres::after {
     content: "";
