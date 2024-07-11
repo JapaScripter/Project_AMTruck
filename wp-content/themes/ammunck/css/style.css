@@ -382,7 +382,7 @@ img {
 .quebra3 {
   display:flex;
   width: 100%;
-  height: 35vw;
+  height: 25vw;
   justify-content:center;
   align-items:center;
   background: url('../img/foto-cta-footer.jpg') no-repeat center;
@@ -392,21 +392,20 @@ img {
 .quebra3 ul {
   list-style-type: disc;
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vw;
   width:90%;
   justify-content:space-evenly;
   align-items:flex-start;
 }
 .quebra3 li {
   font-size:1.25vw;
-  text-align:justify !important;
-  text-align-last:center;
+  text-align:center !important;
   letter-spacing: -0.1vw;
-  word-spacing: 0;
+  word-spacing: 0.5vw;
   color: white;
   display:flex;
-  width:40vw;
+  width:auto;
   flex-direction: column;
   justify-content:center;
   align-items:center;
@@ -829,7 +828,7 @@ html a{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-20vw * 8));
+        transform: translateX(calc(-20vw * 15));
     }
 }
 
@@ -866,7 +865,7 @@ html a{
 .slide-track {
     display: flex;
     width: calc(20vw * 50);
-    animation: scroll 20s linear infinite;
+    animation: scroll 50s linear infinite;
 }
 
 .slides {
@@ -1022,7 +1021,7 @@ html a{
   align-items:center;
 }
 .image-slide-overlay{
-  border-radius:2vw;
+  width:20vw;
   z-index:1;
 }
 
@@ -1087,6 +1086,31 @@ html a{
 }
 .googlemaps{
   width:80%;
+}
+.secbullets{
+  display:flex;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+}
+.dvbullets{
+  text-align:center;
+  display:flex;
+  width:80%;
+  height: 15vw;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.libullets{
+  display:flex;
+  width:30%;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+}
+.imgbullet{
+  width:5vw;
+  margin:0 0 2vw 0;
 }
 
 @media screen and (max-width:768px) {
