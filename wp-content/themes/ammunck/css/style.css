@@ -1021,7 +1021,7 @@ html a{
   align-items:center;
 }
 .image-slide-overlay{
-  width:20vw;
+  width:50vw;
   z-index:1;
 }
 
@@ -1111,6 +1111,52 @@ html a{
 .imgbullet{
   width:5vw;
   margin:0 0 2vw 0;
+}
+.dvconheca{
+  display:flex;
+  width:100%;
+  justify-content: space-evenly;
+  align-items:center;
+}
+.dvconheca2{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+.dvconheca3{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+.divservicos{
+  display:flex;
+  height:60vw;
+  margin-top:3vw;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.divservicosbt{
+  display:flex;
+  margin-bottom:2vw;
+  padding:0;
+  justify-content:center;
+  align-items:center;
+}
+.servicosp{
+  display:flex;
+  height:22vw;
+  padding:0 3vw !important;
+  justify-content:center;
+  align-items:flex-start;
+}
+.servicosh{
+  display:flex;
+  margin:0 !important;
+  justify-content:center;
+  align-items:flex-start;
 }
 
 @media screen and (max-width:768px) {
