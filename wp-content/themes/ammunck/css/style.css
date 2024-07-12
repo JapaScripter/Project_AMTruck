@@ -51,7 +51,17 @@ img {
   color: #000;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 4vw;
+}
+.subtituloconheca{
+  font-size: 2vw;
+  font-weight: 900;
+  text-shadow:0 0 0.1vw rgba(0, 0, 0, 0.1);
+  color: #ffaf00;
+  width:69%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 2vw;
 }
 
 .subtitulo-interno {
@@ -1021,7 +1031,7 @@ html a{
   align-items:center;
 }
 .image-slide-overlay{
-  width:50vw;
+  width:82vw;
   z-index:1;
 }
 
@@ -1096,12 +1106,15 @@ html a{
 .dvbullets{
   text-align:center;
   display:flex;
-  width:80%;
-  height: 15vw;
+  width:100%;
+  height:15vw;
   justify-content:space-evenly;
-  align-items:center;
+  align-items:flex-start;
 }
 .libullets{
+  font-weight:700;
+  text-shadow:0 0 0.1vw rgba(0, 0, 0, 0.2);
+  color: #ffaf00;
   display:flex;
   width:30%;
   flex-direction:column;
@@ -1120,6 +1133,7 @@ html a{
 }
 .dvconheca2{
   display:flex;
+  height:35vw;
   flex-direction: column;
   justify-content:center;
   align-items:center;
