@@ -836,7 +836,7 @@ html a{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-20vw * 15));
+        transform: translateX(calc(-20vw * 18));
     }
 }
 
