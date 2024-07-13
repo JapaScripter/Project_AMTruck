@@ -411,8 +411,6 @@ img {
 .quebra3 li {
   font-size:1vw;
   text-align:center !important;
-  letter-spacing: -0.1vw;
-  word-spacing: 0.5vw;
   color: white;
   display:flex;
   width:auto;
