@@ -426,6 +426,7 @@ img {
 }
 @media only screen and (max-width: 600px) {
   .quebra3 {
+    height:40vw;
     margin: auto;
     padding-top: 20px;
   }
@@ -1185,20 +1186,44 @@ html a{
 }
 
 @media screen and (max-width:768px) {
+  .qualidades{
+    height:40vw;
+  }
   .googlemaps{
   width:90%;
   }
   .depoimentosclientes{
     display:flex;
+    height:100vw;
     flex-direction:column;
     justify-content:center;
     align-items:center;
   }
   .qualidades-lista{
-    height:140vw;
+    height:90vw;
   }
   .conheca{
     height:250vw;
+  }
+  .dvconheca{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .dvconheca2{
+    display:flex;
+    height:170vw;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .subtituloconheca{
+    font-size:5vw;
+    width:70%;
+  }
+  .dvconheca3{
+    margin-top:20vw;
   }
   .lista-de-produtos{
     height:50vw;
@@ -1214,9 +1239,47 @@ html a{
     border-radius: 2vw; /* Mesmo border-radius da imagem para um efeito consistente */
   }
   .image-slide-overlay{
-    margin:20vw 0 0 0 !important;
+    width:100vw;
     border-radius:2vw;
     z-index:1;
+  }
+  .produtos {
+    height:480vw;
+  }
+  .produtosh{
+    margin-bottom:10vw;
+  }
+  .produtosp p{
+    text-align:justify;
+    text-align-last:center;
+  }
+  .divservicos{
+    display:flex;
+    height:200vw;
+    margin-top:3vw;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  .divservicos p{
+    display:flex;
+    height:90vw;
+    margin-top:3vw;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  .dvportfolio{
+    height:150vw;
+  }
+  .dvportfolio h2{
+    margin-bottom:10vw;
+  }
+  .dvportfolio p{
+    margin-bottom:10vw;
+  }
+  .scquebra2{
+    height:60vw;
   }
   .slide{
     margin:0;
@@ -1242,7 +1305,7 @@ html a{
   } 
   .slidesimages{
     width:50vw;
-    height:48vw;
+    height:auto;
   }
   .slide img {
     display: flex;
@@ -1277,7 +1340,7 @@ html a{
     text-align:center
   }
   .qualidades-lista2{
-    height:200vw;
+    height:140vw;
   }
   .instagram-item {
     width: 50%;
@@ -1288,6 +1351,41 @@ html a{
     display: flex;
     width: 45%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portsub{
+    margin-bottom:10vw;
+  }
+  .contatosec{
+    display:flex;
+    height:250vw;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+  }
+  .contatodv1{
+    width:90%;
+    height:150vw;
+  }
+  .contatoul1{
+    display:flex;
+    height:150vw;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  .contatoli{
+    width:65vw;
+    height:35vw;
+    box-shadow:none;
+    border:0.4vw solid #000000;
+  }
+  .contatodv2{
+    display:flex;
+    width:90%;
+    height:70vw;
+    padding:5vw;
     justify-content: center;
     align-items: center;
   }
