@@ -857,7 +857,7 @@ html a{
 .slideres::after {
     content: "";
     position: absolute;
-    width: 21vw;
+    width: 3vw;
     height: 20vw;
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 2;
