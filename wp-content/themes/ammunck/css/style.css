@@ -1180,7 +1180,11 @@ html a{
 .qualidades{
   text-shadow:0 0 0.1vw rgba(0, 0, 0, 0.2);
   color:#fff;
+  display:flex;
   height:13vw;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   background:#ffaf00;
   border-radius:2vw;
 }
