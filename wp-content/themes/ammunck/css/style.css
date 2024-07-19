@@ -895,6 +895,19 @@ html a{
   height: 45vw; /* altura mínima de 45% da largura da viewport */
   overflow: hidden;
 }
+.carousel-mobile {
+  display: none;
+}
+.carousel-desktop {
+  display: flex;
+}
+.carousel-desktop .slide.active {
+  opacity: 1;
+}
+
+.carousel-mobile .slide.active {
+  opacity: 1;
+}
 
 .slide {
   position: absolute;
@@ -906,19 +919,10 @@ html a{
   transition: opacity 2.5s ease; /* Transição suave de opacidade */
 }
 
-.slide.active {
-  opacity: 1;
-}
-
 .slide img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 6vw;
-  left: 0vw;
+  display: block;
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -1225,7 +1229,7 @@ html a{
   text-align:center;
   position:relative;
   width: 100%;
-  margin-bottom:5vw;
+  margin-bottom:2vw;
   padding: 0 2vw;
 }
 .portfoliodv1 p{
@@ -1253,6 +1257,12 @@ html a{
 }
 
 @media screen and (max-width:768px) {
+  .carousel-mobile {
+    display: flex;
+  }
+  .carousel-desktop {
+    display: none;
+  }
   .portfolioimg1{
     width:50vw;
     height:40vw;
@@ -1313,7 +1323,7 @@ html a{
     align-items:center;
   }
   .qualidades-lista{
-    height:90vw;
+    height:140vw;
   }
   .conheca{
     height:250vw;
@@ -1426,6 +1436,7 @@ html a{
     align-items: center;
     width: 100%;
     height: 100%;
+    top:0;
     object-fit: cover;
   }
   .slideres::before, .slideres::after {

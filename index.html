@@ -68,7 +68,7 @@
             </div>
         </header>
         <section class="s-topo">
-            <div class="carousel">
+            <div class="carousel carousel-desktop">
                 <div class="slide active">
                     <img src="wp-content/themes/ammunck/img/Banner1.png" alt="Imagem 1">
                 </div>
@@ -80,6 +80,27 @@
                 </div>
                 <div class="slide">
                     <img src="wp-content/themes/ammunck/img/Banner4.png" alt="Imagem 4">
+                </div>
+                <!-- Indicadores de slides (bolinhas) -->
+                <div class="slide-indicators">
+                    <span class="indicator active" data-slide-index="0"></span>
+                    <span class="indicator" data-slide-index="1"></span>
+                    <span class="indicator" data-slide-index="2"></span>
+                    <span class="indicator" data-slide-index="3"></span>
+                </div>
+            </div>
+            <div class="carousel carousel-mobile">
+                <div class="slide active">
+                    <img src="wp-content/themes/ammunck/img/banner1mobile.png" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="wp-content/themes/ammunck/img/banner2mobile.png" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="wp-content/themes/ammunck/img/banner3mobile.png" alt="Imagem 3">
+                </div>
+                <div class="slide">
+                    <img src="wp-content/themes/ammunck/img/banner4mobile.png" alt="Imagem 4">
                 </div>
                 <!-- Indicadores de slides (bolinhas) -->
                 <div class="slide-indicators">
@@ -450,47 +471,87 @@
         <!-- JavaScript -->
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-    var slides = $('.carousel .slide');
-    var indicators = $('.slide-indicators .indicator');
-    var currentIndex = 0;
-    var slideInterval = 5000; // Intervalo de 5 segundos entre os slides (em milissegundos)
-    var timer;
-
-    // Mostra o slide inicial
-    showSlide(currentIndex);
-
-    // Função para mostrar um slide específico
-    function showSlide(index) {
-        slides.removeClass('active');
-        slides.eq(index).addClass('active');
-        indicators.removeClass('active');
-        indicators.eq(index).addClass('active');
-        currentIndex = index;
-    }
-
-    // Função para avançar para o próximo slide
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }
-
-    // Autoplay do slideshow
-    function startSlideShow() {
-        timer = setInterval(nextSlide, slideInterval);
-    }
-
-    // Iniciar o slideshow automaticamente
-    startSlideShow();
-
-    // Navegação pelos indicadores
-    indicators.click(function() {
-        var index = $(this).index();
-        showSlide(index);
-        clearInterval(timer); // Para o autoplay quando o usuário interage manualmente
-    });
-});
-</script>
+        <script>
+            $(document).ready(function() {
+                var desktopSlides = $('.carousel-desktop .slide');
+                var mobileSlides = $('.carousel-mobile .slide');
+                var desktopIndicators = $('.carousel-desktop .slide-indicators .indicator');
+                var mobileIndicators = $('.carousel-mobile .slide-indicators .indicator');
+                var desktopCurrentIndex = 0;
+                var mobileCurrentIndex = 0;
+                var slideInterval = 5000; // Intervalo de 5 segundos entre os slides (em milissegundos)
+                var desktopTimer, mobileTimer;
+            
+                // Mostra o slide inicial para desktop e mobile
+                showDesktopSlide(desktopCurrentIndex);
+                showMobileSlide(mobileCurrentIndex);
+            
+                // Função para mostrar um slide específico no carrossel desktop
+                function showDesktopSlide(index) {
+                    desktopSlides.removeClass('active');
+                    desktopSlides.eq(index).addClass('active');
+                    desktopIndicators.removeClass('active');
+                    desktopIndicators.eq(index).addClass('active');
+                    desktopCurrentIndex = index;
+                }
+            
+                // Função para mostrar um slide específico no carrossel mobile
+                function showMobileSlide(index) {
+                    mobileSlides.removeClass('active');
+                    mobileSlides.eq(index).addClass('active');
+                    mobileIndicators.removeClass('active');
+                    mobileIndicators.eq(index).addClass('active');
+                    mobileCurrentIndex = index;
+                }
+            
+                // Autoplay do slideshow para desktop
+                function startDesktopSlideShow() {
+                    desktopTimer = setInterval(function() {
+                        desktopCurrentIndex = (desktopCurrentIndex + 1) % desktopSlides.length;
+                        showDesktopSlide(desktopCurrentIndex);
+                    }, slideInterval);
+                }
+            
+                // Autoplay do slideshow para mobile
+                function startMobileSlideShow() {
+                    mobileTimer = setInterval(function() {
+                        mobileCurrentIndex = (mobileCurrentIndex + 1) % mobileSlides.length;
+                        showMobileSlide(mobileCurrentIndex);
+                    }, slideInterval);
+                }
+            
+                // Iniciar o slideshow automaticamente dependendo da largura da tela
+                if ($(window).width() >= 768) {
+                    startDesktopSlideShow();
+                } else {
+                    startMobileSlideShow();
+                }
+            
+                // Navegação pelos indicadores no carrossel desktop
+                desktopIndicators.click(function() {
+                    var index = $(this).index();
+                    showDesktopSlide(index);
+                    clearInterval(desktopTimer); // Para o autoplay quando o usuário interage manualmente
+                });
+            
+                // Navegação pelos indicadores no carrossel mobile
+                mobileIndicators.click(function() {
+                    var index = $(this).index();
+                    showMobileSlide(index);
+                    clearInterval(mobileTimer); // Para o autoplay quando o usuário interage manualmente
+                });
+            
+                // Atualiza a lógica ao redimensionar a tela
+                $(window).resize(function() {
+                    if ($(window).width() >= 768) {
+                        clearInterval(mobileTimer);
+                        startDesktopSlideShow();
+                    } else {
+                        clearInterval(desktopTimer);
+                        startMobileSlideShow();
+                    }
+                });
+            });
+            </script>
 
 </body></html>
