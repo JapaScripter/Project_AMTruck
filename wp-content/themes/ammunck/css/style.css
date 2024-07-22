@@ -892,7 +892,7 @@ html a{
 .carousel {
   position: relative;
   width: 100%;
-  height: 45vw; /* altura mínima de 45% da largura da viewport */
+  height: 44vw; /* altura mínima de 45% da largura da viewport */
   overflow: hidden;
 }
 .carousel-mobile {
@@ -922,8 +922,8 @@ html a{
 .slide img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 51vw;
+  object-fit: contain;
 }
 
 .slide::after {
