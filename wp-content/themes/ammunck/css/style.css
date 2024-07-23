@@ -901,7 +901,7 @@ html a{
 .slideresh {
   position: relative;
   display:flex;
-  width: 70%;
+  width: 100%;
   height: 20vw;
   margin: auto;
   justify-content:center;
