@@ -889,6 +889,70 @@ html a{
     align-items: flex-start;
 }
 
+@keyframes scrollh {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-20vw * 6));
+  }
+}
+
+.slideresh {
+  position: relative;
+  display:flex;
+  width: 70%;
+  height: 20vw;
+  margin: auto;
+  justify-content:center;
+  align-items:center;;
+  background: transparent;
+  overflow: hidden;
+}
+
+.slideresh::before,
+.slideresh::after {
+  content: "";
+  position: absolute;
+  width: 3vw;
+  height: 20vw;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+}
+
+.slideresh::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slideresh::before {
+  top: 0;
+  left: 0;
+}
+
+.slide-trackh {
+  display: flex;
+  width: calc(20vw * 50);
+  animation: scrollh 30s linear infinite;
+}
+
+.slidesh {
+  display: flex;
+  width: 20vw;
+  height: 10vw;
+  margin: 0 2vw;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slidesimagesh{
+  width:20vw;
+  height:8vw;
+  border-radius:1vw;
+  box-shadow:0 0 1vw rgba(255, 255, 255, 0.3);
+}
+
 .carousel {
   position: relative;
   width: 100%;
