@@ -934,7 +934,7 @@ html a{
 .slide-trackh {
   display: flex;
   width: calc(20vw * 50);
-  animation: scrollh 30s linear infinite;
+  animation: scrollh 100s linear infinite;
 }
 
 .slidesh {
