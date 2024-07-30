@@ -291,7 +291,7 @@ img {
 
 .qualidade img {
   margin: 00px auto 20px auto;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .qualidade_lista {
@@ -894,7 +894,7 @@ html a{
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-20vw * 6));
+      transform: translateX(calc(-20vw * 8.5));
   }
 }
 
@@ -939,7 +939,7 @@ html a{
 
 .slidesh {
   display: flex;
-  width: 20vw;
+  width: 30vw;
   height: 10vw;
   margin: 0 2vw;
   justify-content: center;
@@ -947,8 +947,8 @@ html a{
 }
 
 .slidesimagesh{
-  width:20vw;
-  height:8vw;
+  width:30vw;
+  height:10vw;
   border-radius:1vw;
   box-shadow:0 0 1vw rgba(255, 255, 255, 0.3);
 }
