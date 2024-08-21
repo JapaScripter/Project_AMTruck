@@ -1253,7 +1253,7 @@ html a{
   display:flex;
   height:13vw;
   flex-direction:column;
-  justify-content:center;
+  justify-content:start;
   align-items:center;
   background:#ffaf00;
   border-radius:2vw;
