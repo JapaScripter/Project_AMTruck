@@ -915,7 +915,7 @@ html a{
   content: "";
   position: absolute;
   width: 3vw;
-  height: 20vw;
+  height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   z-index: 2;
 }
@@ -951,6 +951,34 @@ html a{
   height:10vw;
   border-radius:1vw;
   box-shadow:0 0 1vw rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width:768px) {
+  .slideresh {
+    height: 40vw;
+  }
+  .slidesimagesh{
+    width:60vw;
+    height:25vw;
+  }
+  .slidesh {
+    width: 70vw;
+    height: 25vw;
+    
+  }
+  .slide-trackh {
+    display: flex;
+    width: calc(20vw * 50);
+    animation: scrollh 50s linear infinite;
+  }
+  @keyframes scrollh {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-20vw * 17.8));
+    }
+  }
 }
 
 .carousel {
@@ -1331,8 +1359,8 @@ html a{
     display: none;
   }
   .portfolioimg1{
-    width:50vw;
-    height:40vw;
+    width:75vw;
+    height:50vw;
   }
   .portfoliodv1 h2{
     margin:10vw 0;
@@ -1344,9 +1372,11 @@ html a{
     width:80vw;
   }
   .portfolioservicos{
+    position:relative;
     display:flex;
-    height:200vw;
+    height:160vw;
     margin:10vw;
+    top:20vw;
     flex-direction:column;
     justify-content:center;
     align-items:center;
@@ -1434,7 +1464,7 @@ html a{
     z-index:1;
   }
   .produtos {
-    height:480vw;
+    height:325vw;
   }
   .produtosh{
     margin-bottom:10vw;
@@ -1445,7 +1475,7 @@ html a{
   }
   .divservicos{
     display:flex;
-    height:200vw;
+    height:135vw;
     margin-top:3vw;
     flex-direction:column;
     justify-content:space-evenly;
@@ -1460,7 +1490,7 @@ html a{
     align-items:center;
   }
   .dvportfolio{
-    height:150vw;
+    height:80vw;
   }
   .dvportfolio h2{
     margin-bottom:10vw;
