@@ -837,7 +837,7 @@ html a{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-30vw * 8.8));
+        transform: translateX(calc(-30vw * 11.2));
     }
 }
 
@@ -876,8 +876,8 @@ html a{
 
 .slide-track {
     display: flex;
-    width: calc(30vw * 30);
-    animation: scroll 60s linear infinite;
+    width: calc(30vw *30);
+    animation: scroll 10s linear infinite;
 }
 
 .slides {
@@ -1249,7 +1249,7 @@ html a{
 }
 .divservicos{
   display:flex;
-  height:45vw;
+  height:50vw;
   margin-top:3vw;
   flex-direction:column;
   justify-content:space-evenly;
