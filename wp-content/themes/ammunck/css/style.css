@@ -1611,3 +1611,11 @@ html a{
     align-items: center;
   }
 }
+
+.stdv{
+  font-weight:900;
+  color:#000000;
+}
+.stdv:hover{
+  color:#FFFFFF;
+}
