@@ -1553,7 +1553,7 @@ html a{
   } 
   .slidesimages{
     width:50vw;
-    height:auto;
+    height:30vw;
   }
   .slide img {
     display: flex;
