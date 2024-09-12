@@ -243,7 +243,7 @@ img {
 
 @media screen and (max-width:768px){
   .miport0 {
-    height: 250vw;
+    height: 300vw;
   }
   .miport1 {
     height: 300vw;
@@ -1386,7 +1386,7 @@ html a{
   .portfolioservicos{
     position:relative;
     display:flex;
-    height:160vw;
+    height:200vw;
     margin:10vw;
     top:20vw;
     flex-direction:column;
