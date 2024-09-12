@@ -1476,7 +1476,7 @@ html a{
     z-index:1;
   }
   .produtos {
-    height:400vw;
+    height:380vw;
   }
   .produtosh{
     margin-bottom:10vw;
@@ -1493,7 +1493,23 @@ html a{
     justify-content:space-evenly;
     align-items:center;
   }
+  .divservicos2{
+    display:flex;
+    height:140vw;
+    margin-top:3vw;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+  }
   .divservicos p{
+    display:flex;
+    height:90vw;
+    margin-top:3vw;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  .divservicos2 p{
     display:flex;
     height:90vw;
     margin-top:3vw;
