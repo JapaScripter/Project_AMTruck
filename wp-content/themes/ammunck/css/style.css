@@ -1360,7 +1360,10 @@ html a{
   border-radius: 50vw;
 }
 .containerportfolio{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 @media screen and (max-width:768px) {
