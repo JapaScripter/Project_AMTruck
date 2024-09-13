@@ -39,7 +39,7 @@ img {
   color: white;
   border-color: white;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .btn {
     font-size: 9px;
     font-weight: 700;
@@ -173,7 +173,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .introducao-interna {
     width: 100%;
     margin-top: 92px;
@@ -243,7 +243,7 @@ img {
 
 @media screen and (max-width:768px){
   .miport0 {
-    height: 300vw;
+    height: 260vw;
   }
   .miport1 {
     height: 300vw;
@@ -276,7 +276,7 @@ img {
   color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .portfolio p {
     margin: -30px auto 0px auto;
     text-align: center;
@@ -335,7 +335,7 @@ img {
   margin-bottom: -20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .qualidade_lista {
     padding-top: 0px;
   }
@@ -388,7 +388,7 @@ img {
   text-align: center;
   margin: 0 auto;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .quebra,
   .quebra2 {
     margin: auto;
@@ -436,7 +436,7 @@ img {
   justify-content:center;
   align-items:center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .quebra3 {
     height:40vw;
     margin: auto;
@@ -506,7 +506,7 @@ img {
   padding: 20px 0;
   text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .copy {
     padding: 20px 0 0 0;
   }
@@ -593,7 +593,7 @@ img {
   padding-bottom: 60px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .missao_sobre {
     padding-top: 30px;
     padding-bottom: 0px;
@@ -607,7 +607,7 @@ img {
   max-width: 60%;
   margin: 100px auto 15px auto;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .info img {
     max-width: 60%;
     margin: 30px auto 15px auto;
@@ -692,7 +692,7 @@ button[name='enviar'] {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   input[name='nome'] {
     width: 45% !important;
     margin-left: 14px;
@@ -1385,15 +1385,14 @@ html a{
   }
   .portfoliodv1 p{
     width:80vw;
+    margin:0;
   }
   .portfolioservicos{
     position:relative;
     display:flex;
     height:200vw;
-    margin:10vw;
-    top:20vw;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
   }
   .portifolioli{
