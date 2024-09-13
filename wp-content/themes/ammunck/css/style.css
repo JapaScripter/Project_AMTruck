@@ -1130,7 +1130,7 @@ html a{
 }
 
 .qualidades-lista{
-  height:18vw;
+  height:20vw;
 }
 
 .qualidades-lista2{
@@ -1261,8 +1261,6 @@ html a{
 }
 .divservicos{
   display:flex;
-  height:50vw;
-  margin-top:3vw;
   flex-direction:column;
   justify-content:space-evenly;
   align-items:center;
